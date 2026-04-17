@@ -1,0 +1,72 @@
+.artist-list-wrapper {
+  padding: 40px;
+}
+
+.regal-list-title {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+/* Grid layout */
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.artist-card {
+  background: #1b1b1b;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.7);
+}
+
+/* Artist Name */
+.artist-name {
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+/* Bio & Country */
+.artist-country {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.artist-bio {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Delete button */
+.delete-btn {
+  width: 100%;
+  padding: 10px;
+  background: #a80b0b;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #d41414;
+}

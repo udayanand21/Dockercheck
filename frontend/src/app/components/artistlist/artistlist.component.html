@@ -1,0 +1,21 @@
+<div class="artist-list-wrapper">
+  <h2 class="regal-list-title">Artists</h2>
+
+  <div class="artist-grid">
+    <div class="artist-card" *ngFor="let artist of artists">
+
+      <h3 class="artist-name">{{ artist.name }}</h3>
+
+      <p class="artist-country">
+        <strong>Country:</strong> {{ artist.country }}
+      </p>
+
+      <p class="artist-bio">{{ artist.biography }}</p>
+
+      <button class="delete-btn" (click)="deleteArtist(artist.id)">
+        Delete Artist
+      </button>
+
+    </div>
+  </div>
+</div>

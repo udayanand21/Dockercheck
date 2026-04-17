@@ -1,0 +1,43 @@
+<div class="artist-form-wrapper">
+<div class="regal-container">
+  <div class="regal-card">
+    <h2 class="regal-title">Add Artist</h2>
+
+    <form (ngSubmit)="submitArtist()">
+      <div class="mb-5">
+        <label class="form-label regal-label">Artist Name</label>
+        <input 
+          type="text"
+          class="form-control regal-input"
+          name="name"
+          [(ngModel)]="artist.name"
+          placeholder="Enter artist name">
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label regal-label">Biography</label>
+        <textarea
+          class="form-control regal-input"
+          name="biography"
+          [(ngModel)]="artist.biography"
+          rows="3"
+          placeholder="Short biography of the artist"></textarea>
+      </div>
+
+      <div class="mb-5">
+        <label class="form-label regal-label">Country</label>
+        <input 
+          type="text"
+          class="form-control regal-input"
+          name="country"
+          [(ngModel)]="artist.country"
+          placeholder="Country of origin">
+      </div>
+
+      <button class="btn regal-btn w-100 mt-3">Save Artist</button>
+
+    </form>
+
+  </div>
+</div>
+</div>

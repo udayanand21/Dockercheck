@@ -1,0 +1,98 @@
+/* Wrapper around the form */
+.artwork-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* Larger container for premium feel */
+.regal-container {
+  max-width: 750px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Luxury card */
+.regal-card {
+  background: #1b1b1b;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.regal-title {
+  color: #d4af37;
+  font-family: 'Georgia', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form layout with equal spacing */
+.regal-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Label */
+.regal-label {
+  color: #d4af37;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Input + Textarea + Select */
+.regal-input {
+  width: 100% !important;
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.regal-input::placeholder {
+  color: #aaa;
+}
+
+.regal-input:focus {
+  border-color: #d4af37;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(212,175,55,0.7);
+}
+
+/* Button */
+.regal-btn {
+  background: #d4af37;
+  color: #000;
+  padding: 14px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.regal-btn:hover {
+  background: #e4c465;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,33 @@
+<div class="artwork-list-wrapper">
+
+  <h2 class="gallery-title">Art Gallery</h2>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-card" *ngFor="let artwork of artworks">
+
+      <!-- Artwork Image -->
+      <img class="gallery-image" [src]="artwork.imageUrl" alt="{{ artwork.title }}">
+
+      <!-- Title -->
+      <h3 class="gallery-title-small">{{ artwork.title }}</h3>
+
+      <!-- Artist -->
+      <p class="gallery-artist">
+        By: <span>{{ artwork.artist.name }}</span>
+      </p>
+
+      <!-- Style -->
+      <p class="gallery-style">{{ artwork.style }}</p>
+
+      <!-- Delete Button -->
+      <button class="gallery-delete-btn" (click)="deleteArtwork(artwork.id)">
+        Delete
+      </button>
+      <button class="gallery-edit-btn" (click)="editArtwork(artwork.id)">Edit</button>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,78 @@
+<div class="artwork-form-wrapper">
+
+  <div class="regal-container">
+    <div class="regal-card">
+
+      <h2 class="regal-title">Add Artwork</h2>
+
+      <form (ngSubmit)="submitArtwork()">
+
+        <!-- Title -->
+        <div class="mb-3">
+          <label class="regal-label">Title</label>
+          <input
+            type="text"
+            class="regal-input"
+            name="title"
+            [(ngModel)]="artwork.title"
+            placeholder="Enter artwork title">
+        </div>
+
+        
+        <div class="mb-3">
+          <label class="regal-label">Style</label>
+          <input
+            type="text"
+            class="regal-input"
+            name="style"
+            [(ngModel)]="artwork.style"
+            placeholder="Renaissance, Modernism, Abstract...">
+        </div>
+
+       
+        <div class="mb-3">
+          <label class="regal-label">Description</label>
+          <textarea
+            class="regal-input"
+            rows="3"
+            name="description"
+            [(ngModel)]="artwork.description"
+            placeholder="Short description of artwork"></textarea>
+        </div>
+
+      
+        <div class="mb-3">
+          <label class="regal-label">Image URL</label>
+          <input
+            type="text"
+            class="regal-input"
+            name="imageUrl"
+            [(ngModel)]="artwork.imageUrl"
+            placeholder="Paste artwork image URL">
+        </div>
+
+        
+        <div class="mb-3">
+          <label class="regal-label">Select Artist</label>
+
+          <select
+            class="regal-input"
+            name="artist"
+            [(ngModel)]="selectedArtistId">
+
+            <option value="" disabled selected>Select Artist</option>
+            <option *ngFor="let artist of artists" [value]="artist.id">
+              {{ artist.name }}
+            </option>
+
+          </select>
+        </div>
+
+      
+        <button class="regal-btn w-100 mt-3">Save Artwork</button>
+
+      </form>
+    </div>
+  </div>
+
+</div>
