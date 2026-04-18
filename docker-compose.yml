@@ -28,5 +28,14 @@ services:
         condition: service_healthy
     restart: always
 
+  frontend:
+    container_name: dockercheck-frontend
+    build: ./frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+    restart: always
+
 volumes:
   mysql_data:

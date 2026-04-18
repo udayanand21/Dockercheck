@@ -3,7 +3,7 @@ import { ArtistformComponent } from './components/artistform/artistform.componen
 import { ArtistlistComponent } from './components/artistlist/artistlist.component';
 import { ArtworkformComponent } from './components/artworkform/artworkform.component';
 import { ArtworklistComponent } from './components/artworklist/artworklist.component';
-
+import { EditartworkComponent } from './components/editartwork/editartwork.component';
 export const routes: Routes = [
   { path: 'add-artist', component: ArtistformComponent },
   { path: '', redirectTo: 'add-artist', pathMatch: 'full' },

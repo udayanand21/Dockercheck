@@ -8,7 +8,7 @@ import { Artist } from '../models/artist';
 })
 export class ArtistService {
 
-  private baseUrl = 'http://localhost:8080/api/artists';
+  private baseUrl = 'https://turbo-memory-jj669gvqx4563qv64-8080.app.github.dev/api/artists';
 
   constructor(private http: HttpClient) { }
 
